@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "archaeological-magic",
+	"version": "${version}",
+	"name": "Archaeological Magic",
+	"description": "This is a mod where you dig up different secrets to unlock powers, fight monsters and even explore a new dimension!",
+	"authors": [
+		"ChocWaffle"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "MIT",
+	"icon": "assets/archaeological-magic/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.chocwaffle.archaeologicalmagic.ArchaeologicalMagic"
+		],
+		"fabric-datagen": [
+			"net.chocwaffle.archaeologicalmagic.ArchaeologicalMagicDataGenerator"
+		],
+		"client": [
+			"net.chocwaffle.archaeologicalmagic.ArchealogicalMagicClient"
+		]
+	},
+	"mixins": [
+		"archaeological-magic.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.10",
+		"minecraft": "~1.21",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
