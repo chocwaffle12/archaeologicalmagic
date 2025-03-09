@@ -1,5 +1,7 @@
 package net.chocwaffle.archaeologicalmagic;
 
+import net.chocwaffle.archaeologicalmagic.block.ModBlocks;
+import net.chocwaffle.archaeologicalmagic.item.ModItemGroups;
 import net.chocwaffle.archaeologicalmagic.item.ModItems;
 import net.fabricmc.api.ModInitializer;
 
@@ -12,6 +14,8 @@ public class ArchaeologicalMagic implements ModInitializer {
 
 	@Override
 	public void onInitialize() {
+		ModItemGroups.registerItemGroups();
 		ModItems.registerModItems();
+		ModBlocks.registerModBlocks();
 	}
 }

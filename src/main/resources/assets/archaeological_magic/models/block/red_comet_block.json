@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "archaeological_magic:block/red_comet_block"
+  }
+}

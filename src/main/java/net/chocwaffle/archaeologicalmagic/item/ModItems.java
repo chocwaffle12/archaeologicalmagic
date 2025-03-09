@@ -11,6 +11,7 @@ import net.minecraft.util.Identifier;
 
 public class ModItems {
     public static final Item PURPLE_COMET_FRAGMENT = registerItem("purple_comet_fragment", new Item(new Item.Settings()));
+    public static final Item RED_COMET_FRAGMENT = registerItem("red_comet_fragment", new Item(new Item.Settings()));
 
     private static Item registerItem(String name, Item item){
         return Registry.register(Registries.ITEM, Identifier.of(ArchaeologicalMagic.MOD_ID, name),item);
@@ -21,6 +22,7 @@ public class ModItems {
 
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.INGREDIENTS).register(fabricItemGroupEntries -> {
             fabricItemGroupEntries.add(PURPLE_COMET_FRAGMENT);
+            fabricItemGroupEntries.add(RED_COMET_FRAGMENT);
         });
     }
 }

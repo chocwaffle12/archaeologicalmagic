@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "ingredients": [
+    {
+      "item": "archaeological_magic:red_comet_block"
+    }
+  ],
+  "result": {
+    "id": "archaeological_magic:red_comet_fragment",
+    "count": 9
+  }
+}
+

@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "archaeological_magic:item/red_comet_fragment"
+  }
+}

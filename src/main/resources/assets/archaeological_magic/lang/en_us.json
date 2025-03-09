@@ -1,3 +1,8 @@
 {
-  "item.archaeological_magic.purple_comet_fragment": "Purple Comet Fragment"
+  "item.archaeological_magic.purple_comet_fragment": "Purple Comet Fragment",
+  "item.archaeological_magic.red_comet_fragment": "Red Comet Fragment",
+
+  "block.archaeological_magic.purple_comet_block": "Purple Comet Block",
+  "block.archaeological_magic.red_comet_block": "Red Comet Block",
+  "itemgroup.archaeological_magic.metal_group": "Archaeological Magic Metals"
 }

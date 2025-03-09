@@ -1,0 +1,53 @@
+{
+  "type": "minecraft:block",
+  "pools": [
+    {
+      "bonus_rolls": 0,
+      "entries": [
+        {
+          "type": "minecraft:alternatives",
+          "children": [
+            {
+              "type": "minecraft:item",
+              "conditions": [
+                {
+                  "condition": "minecraft:match_tool",
+                  "predicate": {
+                    "predicates": {
+                      "minecraft:enchantments": [
+                        {
+                          "enchantments": "minecraft:silk_touch",
+                          "levels": {
+                            "min": 2,
+                            "max": 4
+                          }
+                        }
+                      ]
+                    }
+                  }
+                }
+              ],
+              "name": "archaeological_magic:purple_comet_block"
+            },
+            {
+              "type": "minecraft:item",
+              "functions": [
+                {
+                  "enchantment": "minecraft:fortune",
+                  "formula": "minecraft:ore_drops",
+                  "function": "minecraft:apply_bonus"
+                },
+                {
+                  "function": "minecraft:explosion_decay"
+                }
+              ],
+              "name": "archaeological_magic:purple_comet_fragment"
+            }
+          ]
+        }
+      ],
+      "rolls": 2
+    }
+  ],
+  "random_sequence": "archaeological_magic:blocks/purple_comet_block"
+}
